@@ -48,3 +48,10 @@ h3{
 .page_content {
     flex: 1
 }
+
+.condition-div {
+    margin-left: 25%;
+    flex: 1;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
