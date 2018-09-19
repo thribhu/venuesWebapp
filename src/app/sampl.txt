@@ -1,0 +1,83 @@
+
+  <form [formGroup] = "venuApplicationForm" class="venuForms_class">
+    <div class="form-group">
+      <mat-form-field>
+      <input matInput placeholder="Name" class="form-control" value="thribhuvan">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field>
+      <input matInput placeholder="Website" class="form-control" value="www.yourWebsite.com">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field>
+      <input matInput placeholder="Capicity"  class="form-control" value="50">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field>
+      <input matInput placeholder="Amenities" class="form-control" value="Ac">
+    </mat-form-field>
+  </div>
+  <mat-radio-group>
+    <mat-radio-button value="1">Audio Equipment</mat-radio-button>
+    <mat-radio-button value="2">Video Equipment</mat-radio-button>
+  </mat-radio-group>
+  <div class="form-group">
+      <mat-form-field>
+          <input matInput placeholder="Line-1" class="form-control" value="Optional address 1">
+        </mat-form-field>
+  </div>
+  <div class="form-group">
+      <mat-form-field>
+          <input matInput placeholder="Line-2" class="form-control" value="Optional address 2">
+        </mat-form-field>
+  </div>
+  <div class="form-group">
+      <mat-form-field>
+          <input matInput placeholder="Email" class="form-control" value="test@test.com">
+        </mat-form-field>
+  </div>
+  <div class="form-group">
+      <mat-form-field>
+          <input matInput placeholder="Mobile" class="form-control" value="123456780">
+        </mat-form-field>
+  </div>
+  <div class="form-group">
+          <mat-form-field class="example-full-width">
+            <input type="text" placeholder="Country" aria-label="Assignee" matInput formControlName="country" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+              <mat-option *ngFor="let country of countries | async" [value]="country">
+                {{country}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        
+        <!--
+      <mat-form-field>
+      <input type="text" matInput [formControl]="country" [matAutocomplete]="auto">
+    </mat-form-field>
+    
+    <mat-autocomplete #auto="matAutocomplete" >
+      <mat-option *ngFor="let country of countries" [value]="option">{{country}}</mat-option>
+    </mat-autocomplete>
+       <mat-form-field>
+          <input matInput placeholder="Country" class="form-control" value="India">
+        </mat-form-field> -->
+  </div>
+  <div class="form-group">
+      <mat-form-field>
+          <input matInput placeholder="City" class="form-control" value="Hyderabad">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="State" class="form-control" value="Telangana">
+          </mat-form-field>
+          <mat-form-field>
+              <input matInput placeholder="Zip" class="form-control" value="234567">
+            </mat-form-field>
+  </div>
+
+  
+
+  </form>

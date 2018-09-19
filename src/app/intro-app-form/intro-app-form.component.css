@@ -1,0 +1,24 @@
+
+/* .venueuForm {
+    text-align: center;   
+} */
+/* .mat-input-wrapper{
+    width:400px !important;
+  }
+
+.custom {
+    width: 400px !important;
+} */
+.mat-radio-button {
+    display: grid !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+:host input.mat-input-wrapper {
+    color: red;
+    font-size: 18px;
+ }
+
+ label{
+     color: #3f51b5;
+ }

@@ -1,0 +1,37 @@
+
+    <div class="col-md-12 box"  *ngFor = "let s1 of venue | paginate: { itemsPerPage: 5, currentPage: p }">
+            <div class="row" style="margin-top: 10px;margin-bottom:10px;">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <img class="img-responsive" src={{s1.imagePath}} alt="" style="height:170px !important; width: 100%;border-radius: 15px;">
+                </div>
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h2 class="port-ttl">{{s1.name}}</h2>
+                    <div class="port-desc">
+                        <p>Rajendra Nagar , Hyderabad</p>
+                        <p>
+                            <b>Address:</b> 6-10-127/1/A, Pillar No : 245, Near Best Price , Ring Road , Rajendera
+                            Nagar, Hyderabad</p>
+                       </div>                       
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 class="clshead">Capacity</h5>
+                                <h5>Yes</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="clshead">Indoor</h5>
+                                <h5>200</h5>
+                            </div>
+                            <div class="col-md-4">
+                            <input type="button" class="btn btn-outline-danger btn-sm" value="Details" style="width:100px;" />
+                            </div>
+                        </div>
+                    
+                </div> 
+            </div>
+            
+        </div>
+        <div style="padding-top: 20px;" class="col-md-10">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </div>
+        
+  

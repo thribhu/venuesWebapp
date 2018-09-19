@@ -1,0 +1,26 @@
+.sidenav-container{
+  margin-bottom: 120px;
+}
+.title-center {
+  flex: 1 1 auto;
+  text-align: center;
+}
+.mat-toolbar.mat-primary {
+  background: #FF5252;
+  color: #fff;
+}
+.icon-img{
+  height:35px; 
+  width:35px;
+ margin-top:12px;
+ color:#fff;
+}
+
+.sidenav-container {
+  /*height: 100%;*/
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0,0,0,.24);
+}

@@ -1,0 +1,26 @@
+
+
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+.place{
+    margin-top: 2000px;
+}
+
+.sidenav {
+
+    margin-top: 80px;
+    width: 200px;
+    box-shadow: 3px 0 6px rgba(0,0,0,.24);
+  }
+
+  .page{
+      display: flex;
+  }
+
+  .page_sidebar {
+      width: 200px;
+      
+  }
+  .page_content {
+      flex: 1
+  }
