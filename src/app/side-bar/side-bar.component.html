@@ -4,19 +4,25 @@
                 <div class="col">
                   <div class="">
                     <h3 class="text-center"></h3>
-                    <h4>
-                        Capacity
-                    </h4>
-                    <div *ngFor="let i of capacityFiltes">
-                        <input type="checkbox" value="{{i}}">{{i}}
+                    <div class="condition-div">
+                        <h4>
+                            Capacity
+                        </h4>
+                        <div *ngFor="let i of capacityFiltes">
+                            <input type="checkbox" value="{{i}}">{{i}}
+                        </div>
                     </div>
+                   <div class="condition-div">
                     <h4>Locations</h4>
                     <div *ngFor="let i of locationFiltes">
                         <input type="checkbox" value="{{i}}">{{i}}
                     </div>
-                    <h4>Audio/Video</h4>
-                    <div *ngFor="let i of Audio_VideoFiltes">
-                        <input type="checkbox" value="{{i}}">{{i}}
+                   </div>
+                    <div class="condition-div">
+                        <h4>Audio/Video</h4>
+                        <div *ngFor="let i of Audio_VideoFiltes">
+                            <input type="checkbox" value="{{i}}">{{i}}
+                        </div>
                     </div>
                   </div><br>
                 </div>
